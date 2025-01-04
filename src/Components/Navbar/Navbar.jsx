@@ -1,22 +1,21 @@
 import { Link, NavLink } from 'react-router-dom';
-import logoPic from '../../assets/logo.png'
+import logoPic from '../../assets/logo.png';
 
 const Navbar = () => {
-    const links = <>
-        <li><NavLink to='/'>Home</NavLink></li>
-        <li><NavLink to='/about'>About</NavLink></li>
-        <li><NavLink to='/edu'>Education</NavLink></li>
-        <li><NavLink to='/project'>Projects</NavLink></li>
-        <li><NavLink to='/contact'>Contact Me</NavLink></li>
-    </>
-    const resumeLink = 'https://drive.google.com/uc?id=1rOuG4boxEYfHWvsVUlg74ZgdriceK9Gt&export=download';
+    const links = (
+        <>
+            <li><NavLink to='/'>Home</NavLink></li>
+            <li><NavLink to='/about'>About</NavLink></li>
+            <li><NavLink to='/edu'>Education</NavLink></li>
+            <li><NavLink to='/project'>Projects</NavLink></li>
+            <li><NavLink to='/contact'>Contact Me</NavLink></li>
+        </>
+    );
 
-    const handleResumeClick = () => {
-
-    };
+    const resumeLink = 'https://drive.google.com/file/d/1rOuG4boxEYfHWvsVUlg74ZgdriceK9Gt/view?usp=drive_link';
 
     return (
-        <div className="navbar bg-base-100">
+        <div className="navbar sticky top-0 z-50 backdrop-blur-lg">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -36,27 +35,29 @@ const Navbar = () => {
                     <ul
                         tabIndex={0}
                         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                       {links}
+                        {links}
                     </ul>
                 </div>
                 <Link to='/' className="">
-                    <img className='w-14' src={logoPic} alt="" />
+                    <img className='w-14' src={logoPic} alt="Logo" />
                 </Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
-                   {links}
+                    {links}
                 </ul>
             </div>
             <div className="navbar-end">
                 <a
+                    href={resumeLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="btn"
-                    onClick={handleResumeClick}
                 >
                     Resume
                 </a>
             </div>
-        </div >
+        </div>
     );
 };
 

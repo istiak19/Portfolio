@@ -10,6 +10,8 @@ import Home from './Components/Home/Home';
 import Educational from './Pages/Educational';
 import Contact from './Pages/Contact';
 import About from './Pages/About';
+import Projects from './Pages/Projects';
+import View from './Pages/View';
 
 const router = createBrowserRouter([
   {
@@ -27,6 +29,14 @@ const router = createBrowserRouter([
       {
         path: '/edu',
         element: <Educational></Educational>
+      },
+      {
+        path: '/project',
+        element: <Projects></Projects>
+      },
+      {
+        path: '/view/:id',
+        element: <View></View>
       },
       {
         path: '/contact',

@@ -1,0 +1,33 @@
+[
+    {
+        "id": 1,
+        "name": "Winter Clothes Donation",
+        "image": "https://i.ibb.co.com/sjfvddD/ass-9.png",
+        "technologies": "React, Tailwind CSS, Firebase, DaisyUI",
+        "description": "A platform for organizing winter donation drives to help people in need.",
+        "challenges": "Ensuring real-time data updates and user-friendly donation forms.",
+        "clientLink": "https://github.com/istiak19/assignment-9",
+        "liveLink": "https://winter-clothes-donation.netlify.app/"
+    },
+    {
+        "id": 2,
+        "name": "Fundsphere",
+        "image": "https://i.ibb.co.com/n7k0CwJ/ass-10.png",
+        "technologies": "React, Node.js, MongoDB, Express.js, Tailwind CSS, Firebase, DaisyUI",
+        "description": "Fundsphere is an innovative crowdfunding platform that empowers individuals and organizations to bring their ideas to life. Whether it's personal needs, creative projects, or groundbreaking startups, Fundsphere connects creators with supporters to make dreams a reality. With intuitive features, secure transactions, and community-driven support, Fundsphere ensures a seamless and engaging fundraising experience.",
+        "challenges": "Implementing secure payment gateways.",
+        "serverLink": "https://github.com/username/winter-donation-server",
+        "clientLink": "https://github.com/username/winter-donation-client",
+        "liveLink": "https://fundsphere-website.web.app/"
+    },
+    {
+        "id": 3,
+        "name": "EduCircle",
+        "image": "https://i.ibb.co.com/FD0tLyX/ass-11.png",
+        "technologies": "React, Node.js, MongoDB, Express.js, Tailwind CSS, Firebase, DaisyUI",
+        "description": "This project aims to create an interactive platform for managing assignments in an online group study environment. It allows users to create, submit, and grade assignments while promoting collaboration and accountability. Key features include login options, assignment management (create, modify, delete), peer grading, and a dark/light theme for better user experience. The platform ensures ease of use, flexibility, and engagement, offering a seamless way to manage and track assignments while encouraging collaborative learning.",
+        "serverLink": "https://github.com/username/bpl-dream11-server",
+        "clientLink": "https://github.com/username/bpl-dream11-client",
+        "liveLink": "https://educircle-839d0.web.app/"
+    }
+]
