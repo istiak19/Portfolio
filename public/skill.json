@@ -1,0 +1,52 @@
+[
+    {
+        "title": "HTML",
+        "description": "HTML for structuring web pages and applications.",
+        "icon": "https://i.ibb.co.com/zRncngd/68747470733a2f2f692e6962622e636f2e636f6d2f306833663634542f68746d6c2e706e67.png"
+    },
+    {
+        "title": "CSS",
+        "description": "CSS for styling and layout of web pages.",
+        "icon": "https://i.ibb.co.com/vz594mr/68747470733a2f2f692e6962622e636f2e636f6d2f4e5347515138472f6373732e706e67.png"
+    },
+    {
+        "title": "Tailwind CSS",
+        "description": "Tailwind CSS for utility-first CSS styling framework.",
+        "icon": "https://i.ibb.co.com/1dmMdnc/68747470733a2f2f692e6962622e636f2e636f6d2f4d536d73426e4a2f7461696c77696e642d6373732e706e67.png"
+    },
+    {
+        "title": "Daily UI",
+        "description": "Daily UI for practicing UI/UX design concepts.",
+        "icon": "https://i.ibb.co.com/BP0Fv5c/68747470733a2f2f692e6962622e636f2e636f6d2f47305164734b6d2f64616973792d75692e706e67.png"
+    },
+    {
+        "title": "JavaScript",
+        "description": "JavaScript for adding interactivity to web pages.",
+        "icon": "https://i.ibb.co.com/pLHK0Pw/68747470733a2f2f692e6962622e636f2e636f6d2f595a59486766572f6a6176612d7363726970742e706e67.png"
+    },
+    {
+        "title": "React.js",
+        "description": "React.js for Frontend and User-Interface Development.",
+        "icon": "https://i.ibb.co.com/tMrgKQH/68747470733a2f2f692e6962622e636f2e636f6d2f4c6e67487a47472f72656163742e706e67.png"
+    },
+    {
+        "title": "React Router",
+        "description": "React Router for handling navigation and routing in React apps.",
+        "icon": "https://i.ibb.co.com/WzyFdWQ/68747470733a2f2f692e6962622e636f2e636f6d2f487a6d564d4d302f72656163742d726f757465722d646f6d2e706e67.png"
+    },
+    {
+        "title": "Firebase",
+        "description": "Firebase for authentication, real-time database, and hosting services.",
+        "icon": "https://i.ibb.co.com/pwtrnf6/68747470733a2f2f692e6962622e636f2e636f6d2f375844784438772f66697265626173652e706e67.png"
+    },
+    {
+        "title": "Node.JS & Express.js",
+        "description": "Node.JS & Express.js for Backend API’s Development.",
+        "icon": "https://i.ibb.co.com/txYys0k/68747470733a2f2f692e6962622e636f2e636f6d2f685774355852382f6e6f64652d6a732e706e67.png"
+    },
+    {
+        "title": "MongoDB Database",
+        "description": "MongoDB for Backend API’s Database Management.",
+        "icon": "https://i.ibb.co.com/WB2S1jQ/68747470733a2f2f692e6962622e636f2e636f6d2f774a51717267472f6d6f6e676f64622e706e67.png"
+    }
+]
