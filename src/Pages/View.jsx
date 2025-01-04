@@ -29,20 +29,20 @@ const View = () => {
                 <p><span className="text-xl font-medium">Challenges: </span>{project?.challenges||'N/A'}</p>
                 <div className="space-y-2 *:text-orange-400">
                     <a
-                        href={project?.serverLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="block hover:underline"
-                    >
-                        Server Code
-                    </a>
-                    <a
                         href={project?.clientLink}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="block hover:underline"
                     >
                         Client Code
+                    </a>
+                    <a
+                        href={project?.serverLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="block hover:underline"
+                    >
+                        Server Code
                     </a>
                     <a
                         href={project?.liveLink}

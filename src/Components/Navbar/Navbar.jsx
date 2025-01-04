@@ -52,7 +52,7 @@ const Navbar = () => {
                     href={resumeLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn"
+                    className="btn bg-orange-400 text-white"
                 >
                     Resume
                 </a>
