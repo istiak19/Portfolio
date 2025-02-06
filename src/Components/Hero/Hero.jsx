@@ -1,4 +1,5 @@
 import { FaEnvelope, FaGithub, FaLinkedin, FaTwitter, FaFacebook, FaWhatsapp } from 'react-icons/fa';
+import { CiSaveDown1 } from "react-icons/ci";
 import myPic from '../../assets/Anik.jpg';
 import { useEffect } from 'react';
 import AOS from 'aos';
@@ -7,10 +8,23 @@ import 'aos/dist/aos.css';
 const Hero = () => {
     useEffect(() => {
         AOS.init({
-            duration: 1000,  // Duration for animations
-            once: true,      // Animation happens once when the element enters the view
+            duration: 1000,
+            once: true,
         });
     }, []);
+
+    const resumeLink = 'https://drive.google.com/uc?export=download&id=1lEQfIPHSfUKngD-9H81wTvOKe6iExv2P';
+    const resumeViewLink = 'https://drive.google.com/file/d/1lEQfIPHSfUKngD-9H81wTvOKe6iExv2P/view?usp=sharing';
+
+    const handleResumeDownload = () => {
+        window.open(resumeViewLink, '_blank');
+        const link = document.createElement('a');
+        link.href = resumeLink;
+        link.setAttribute('download', 'Resume.pdf');
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
 
     return (
         <div className="hero min-h-screen">
@@ -23,6 +37,14 @@ const Hero = () => {
                     <p className="text-gray-500 mb-6">
                         Crafting Innovative, Functional, and User-Friendly Websites for Seamless Digital Solutions.
                     </p>
+                    <div className='my-8'>
+                        <button
+                            onClick={handleResumeDownload}
+                            className="btn btn-outline btn-success px-16 mb-2 md:mb-0 w-full md:w-auto"
+                        >
+                          <CiSaveDown1 />  Resume
+                        </button>
+                    </div>
                     <div className="md:flex md:justify-start justify-center space-x-4">
                         {/* GitHub Link */}
                         <a

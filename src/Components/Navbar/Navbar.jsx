@@ -1,5 +1,6 @@
 import { Link, NavLink } from 'react-router-dom';
 import logoPic from '../../assets/logo.png';
+import { CiSaveDown1 } from 'react-icons/ci';
 
 const Navbar = () => {
     const links = (
@@ -61,9 +62,9 @@ const Navbar = () => {
             <div className="navbar-end">
                 <button
                     onClick={handleResumeDownload}
-                    className="btn bg-blue-500 text-white"
+                    className="btn btn-outline btn-accent mb-2 md:mb-0 w-full md:w-auto"
                 >
-                    Resume
+                    <CiSaveDown1 /> Resume
                 </button>
             </div>
         </div>

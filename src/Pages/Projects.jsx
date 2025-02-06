@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { BsBoxArrowUpRight } from "react-icons/bs";
 import { FaLongArrowAltRight } from "react-icons/fa";
+import { Helmet } from "react-helmet-async";
 
 const Projects = () => {
     const [projects, setProjects] = useState([]);
@@ -28,6 +29,9 @@ const Projects = () => {
 
     return (
         <div className="py-12">
+            <Helmet>
+                <title>Projects | ISTIAK AHAMED</title>
+            </Helmet>
             <h2 className="text-4xl font-bold text-center text-blue-600 mb-8">
                 My Best Projects
             </h2>

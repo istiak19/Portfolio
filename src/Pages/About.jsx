@@ -2,6 +2,7 @@ import pic from '../assets/Anik.jpg';
 import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { Helmet } from 'react-helmet-async';
 
 const About = () => {
     useEffect(() => {
@@ -13,6 +14,9 @@ const About = () => {
 
     return (
         <div>
+            <Helmet>
+                <title>About | ISTIAK AHAMED</title>
+            </Helmet>
             <div className="text-center mb-6 mt-5" data-aos="fade-up">
                 <h1 className="text-4xl font-bold text-blue-600">About Me</h1>
                 <p className="text-lg text-gray-400 mt-4">
