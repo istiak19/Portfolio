@@ -29,15 +29,15 @@ const Educational = () => {
                             className="py-4 border-b border-gray-200 flex justify-between items-start"
                         >
                             <div>
-                                <h3 className="text-lg font-semibold text-gray-800">
+                                <h3 className="text-xl text-white">
                                     {item.degree}
                                 </h3>
                                 {item.institution && (
-                                    <p className="text-gray-600">{item.institution}</p>
+                                    <p className="text-gray-400">{item.institution}</p>
                                 )}
-                                <p className="text-gray-600">{item.gpa}</p>
+                                <p className="text-gray-400">{item.gpa}</p>
                             </div>
-                            <div className="text-gray-600 font-medium">{item.timeline}</div>
+                            <div className="text-gray-400 font-medium">{item.timeline}</div>
                         </div>
                     ))}
                 </div>
