@@ -4,15 +4,26 @@ import logoPic from '../../assets/logo.png';
 const Navbar = () => {
     const links = (
         <>
-            <li><NavLink to='/'>Home</NavLink></li>
-            <li><NavLink to='/about'>About</NavLink></li>
-            <li><NavLink to='/edu'>Education</NavLink></li>
-            <li><NavLink to='/project'>Projects</NavLink></li>
-            <li><NavLink to='/contact'>Contact Me</NavLink></li>
+            <li><NavLink className={({ isActive }) => (isActive ? "!text-blue-600 font-semibold" : "text-black")} to='/'>Home</NavLink></li>
+            <li><NavLink className={({ isActive }) => (isActive ? "!text-blue-600 font-semibold" : "text-black")} to='/about'>About</NavLink></li>
+            <li><NavLink className={({ isActive }) => (isActive ? "!text-blue-600 font-semibold" : "text-black")} to='/edu'>Education</NavLink></li>
+            <li><NavLink className={({ isActive }) => (isActive ? "!text-blue-600 font-semibold" : "text-black")} to='/project'>Projects</NavLink></li>
+            <li><NavLink className={({ isActive }) => (isActive ? "!text-blue-600 font-semibold" : "text-black")} to='/contact'>Contact Me</NavLink></li>
         </>
     );
 
-    const resumeLink = 'https://drive.google.com/file/d/1rOuG4boxEYfHWvsVUlg74ZgdriceK9Gt/view?usp=drive_link';
+    const resumeLink = 'https://drive.google.com/uc?export=download&id=1lEQfIPHSfUKngD-9H81wTvOKe6iExv2P';
+    const resumeViewLink = 'https://drive.google.com/file/d/1lEQfIPHSfUKngD-9H81wTvOKe6iExv2P/view?usp=sharing';
+
+    const handleResumeDownload = () => {
+        window.open(resumeViewLink, '_blank');
+        const link = document.createElement('a');
+        link.href = resumeLink;
+        link.setAttribute('download', 'Resume.pdf');
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
 
     return (
         <div className="navbar sticky top-0 z-50 backdrop-blur-lg">
@@ -39,7 +50,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <Link to='/' className="">
-                    <img className='w-14' src={logoPic} alt="Logo" />
+                    <img className='w-16' src={logoPic} alt="Logo" />
                 </Link>
             </div>
             <div className="navbar-center hidden lg:flex">
@@ -48,14 +59,12 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a
-                    href={resumeLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn bg-orange-400 text-white"
+                <button
+                    onClick={handleResumeDownload}
+                    className="btn bg-blue-500 text-white"
                 >
                     Resume
-                </a>
+                </button>
             </div>
         </div>
     );
