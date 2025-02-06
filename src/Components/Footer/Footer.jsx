@@ -1,10 +1,15 @@
 const Footer = () => {
     return (
-        <footer className="footer footer-center bg-base-300 text-base-content p-4">
-            <aside>
-                <p>Copyright © {new Date().getFullYear()} - All right reserved by Istiak Ahamed</p>
-            </aside>
-        </footer>
+        <>
+            <div className="divider border-t border-gray-400"></div>
+            <footer className="footer footer-center text-base-content pb-4 pt-2">
+                <aside>
+                    <p className="text-gray-400">
+                        Copyright © {new Date().getFullYear()} - All rights reserved by Istiak Ahamed
+                    </p>
+                </aside>
+            </footer>
+        </>
     );
 };
 

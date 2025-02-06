@@ -4,11 +4,11 @@ import logoPic from '../../assets/logo.png';
 const Navbar = () => {
     const links = (
         <>
-            <li><NavLink className={({ isActive }) => (isActive ? "!text-blue-600 font-semibold" : "text-black")} to='/'>Home</NavLink></li>
-            <li><NavLink className={({ isActive }) => (isActive ? "!text-blue-600 font-semibold" : "text-black")} to='/about'>About</NavLink></li>
-            <li><NavLink className={({ isActive }) => (isActive ? "!text-blue-600 font-semibold" : "text-black")} to='/edu'>Education</NavLink></li>
-            <li><NavLink className={({ isActive }) => (isActive ? "!text-blue-600 font-semibold" : "text-black")} to='/project'>Projects</NavLink></li>
-            <li><NavLink className={({ isActive }) => (isActive ? "!text-blue-600 font-semibold" : "text-black")} to='/contact'>Contact Me</NavLink></li>
+            <li><NavLink className={({ isActive }) => (isActive ? "!text-blue-600 font-semibold" : "text-white")} to='/'>Home</NavLink></li>
+            <li><NavLink className={({ isActive }) => (isActive ? "!text-blue-600 font-semibold" : "text-white")} to='/about'>About</NavLink></li>
+            <li><NavLink className={({ isActive }) => (isActive ? "!text-blue-600 font-semibold" : "text-white")} to='/edu'>Education</NavLink></li>
+            <li><NavLink className={({ isActive }) => (isActive ? "!text-blue-600 font-semibold" : "text-white")} to='/project'>Projects</NavLink></li>
+            <li><NavLink className={({ isActive }) => (isActive ? "!text-blue-600 font-semibold" : "text-white")} to='/contact'>Contact Me</NavLink></li>
         </>
     );
 
@@ -26,7 +26,7 @@ const Navbar = () => {
     };
 
     return (
-        <div className="navbar sticky top-0 z-50 backdrop-blur-lg">
+        <div className="px-8 navbar sticky top-0 z-50 backdrop-blur-lg">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

@@ -7,8 +7,8 @@ const Hero = () => {
         <div className="hero min-h-screen">
             <div className="hero-content flex flex-col-reverse lg:flex-row lg:space-x-12 px-6 md:px-12">
                 <div className="text-center lg:text-left flex-1">
-                    <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">I'm <span className="text-blue-600">Istiak Ahamed</span></h1>
-                    <p className="text-xl text-gray-600 mb-6">Junior Web Developer</p>
+                    <h1 className="text-4xl md:text-5xl font-bold text-gray-500 mb-4"> Hello I'm <br /><span className="text-[#9E57F6]">Istiak Ahamed</span></h1>
+                    <p className="text-xl text-gray-500 mb-6">Junior Web Developer</p>
                     <div className="md:flex md:justify-start justify-center space-x-4">
                         {/* GitHub Link */}
                         <a
