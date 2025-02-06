@@ -1,15 +1,28 @@
-import { FaEnvelope } from 'react-icons/fa';
+import { FaEnvelope, FaGithub, FaLinkedin, FaTwitter, FaFacebook, FaWhatsapp } from 'react-icons/fa';
 import myPic from '../../assets/Anik.jpg';
-import { FaGithub, FaLinkedin, FaTwitter, FaFacebook, FaWhatsapp } from 'react-icons/fa';
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Hero = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,  // Duration for animations
+            once: true,      // Animation happens once when the element enters the view
+        });
+    }, []);
+
     return (
         <div className="hero min-h-screen">
             <div className="hero-content flex flex-col-reverse lg:flex-row lg:space-x-12 px-6 md:px-12">
-                <div className="text-center lg:text-left flex-1">
-                    <h1 className="text-4xl md:text-5xl font-bold text-gray-500 mb-4"> Hello I'm <br /><span className="text-[#9E57F6]">Istiak Ahamed</span></h1>
+                <div className="text-center lg:text-left flex-1" data-aos="fade-right">
+                    <h1 className="text-4xl md:text-5xl font-bold text-gray-500 mb-4">
+                        Hello I'm <br /><span className="text-[#9E57F6]">Istiak Ahamed</span>
+                    </h1>
                     <p className="text-xl text-gray-500 mb-6">Junior Web Developer</p>
-                    <p className="text-gray-500 mb-6">Crafting Innovative, Functional, and User-Friendly Websites for Seamless Digital Solutions.</p>
+                    <p className="text-gray-500 mb-6">
+                        Crafting Innovative, Functional, and User-Friendly Websites for Seamless Digital Solutions.
+                    </p>
                     <div className="md:flex md:justify-start justify-center space-x-4">
                         {/* GitHub Link */}
                         <a
@@ -17,6 +30,8 @@ const Hero = () => {
                             target="_blank"
                             rel="noopener noreferrer"
                             className="btn btn-outline btn-accent mb-2 md:mb-0 w-full md:w-auto"
+                            data-aos="zoom-in"
+                            data-aos-delay="100"
                         >
                             <FaGithub className="mr-2" /> GitHub
                         </a>
@@ -27,6 +42,8 @@ const Hero = () => {
                             target="_blank"
                             rel="noopener noreferrer"
                             className="btn btn-outline btn-primary mb-2 md:mb-0 w-full md:w-auto"
+                            data-aos="zoom-in"
+                            data-aos-delay="200"
                         >
                             <FaLinkedin className="mr-2" /> LinkedIn
                         </a>
@@ -37,6 +54,8 @@ const Hero = () => {
                             target="_blank"
                             rel="noopener noreferrer"
                             className="btn btn-outline btn-info mb-2 md:mb-0 w-full md:w-auto"
+                            data-aos="zoom-in"
+                            data-aos-delay="300"
                         >
                             <FaTwitter className="mr-2" /> Twitter
                         </a>
@@ -47,6 +66,8 @@ const Hero = () => {
                             target="_blank"
                             rel="noopener noreferrer"
                             className="btn btn-outline btn-secondary mb-2 md:mb-0 w-full md:w-auto"
+                            data-aos="zoom-in"
+                            data-aos-delay="400"
                         >
                             <FaFacebook className="mr-2" /> Facebook
                         </a>
@@ -55,6 +76,8 @@ const Hero = () => {
                         <a
                             href="mailto:istiakanik79@gmail.com"
                             className="btn btn-outline btn-warning mb-2 md:mb-0 w-full md:w-auto"
+                            data-aos="zoom-in"
+                            data-aos-delay="500"
                         >
                             <FaEnvelope className="mr-2" /> Email
                         </a>
@@ -65,13 +88,15 @@ const Hero = () => {
                             target="_blank"
                             rel="noopener noreferrer"
                             className="btn btn-outline btn-success mb-2 md:mb-0 w-full md:w-auto"
+                            data-aos="zoom-in"
+                            data-aos-delay="600"
                         >
                             <FaWhatsapp className="mr-2" /> WhatsApp
                         </a>
                     </div>
                 </div>
 
-                <div className="flex justify-center lg:justify-end flex-1">
+                <div className="flex justify-center lg:justify-end flex-1" data-aos="fade-left">
                     <img
                         src={myPic}
                         alt="Istiak Ahamed"

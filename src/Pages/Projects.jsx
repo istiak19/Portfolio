@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { BsBoxArrowUpRight } from "react-icons/bs";
+import { FaLongArrowAltRight } from "react-icons/fa";
 
 const Projects = () => {
     const [projects, setProjects] = useState([]);
@@ -16,6 +18,14 @@ const Projects = () => {
         navigate(`/view/${projectId}`);
     };
 
+    // Function to limit the description to a specific number of characters
+    const truncateDescription = (description, limit = 100) => {
+        if (description.length > limit) {
+            return description.substring(0, limit) + "...";
+        }
+        return description;
+    };
+
     return (
         <div className="py-12">
             <h2 className="text-4xl font-bold text-center text-blue-600 mb-8">
@@ -25,23 +35,34 @@ const Projects = () => {
                 {projects.map((project) => (
                     <div
                         key={project.id}
-                        className="bg-white rounded-lg shadow-lg overflow-hidden"
+                        className="rounded-lg bg-[#1E2636] border border-white shadow-lg overflow-hidden"
                     >
                         <img
                             src={project.image}
                             alt={project.name}
                             className="w-full h-48 object-cover"
                         />
-                        <div className="p-6">
-                            <h3 className="text-2xl font-semibold text-gray-800 mb-4">
+                        <div className="p-6 flex flex-col">
+                            <h3 className="text-xl font-semibold text-white mb-4">
                                 {project.name}
                             </h3>
-                            <div className="mt-6">
+                            <p className="text-gray-400">
+                                {truncateDescription(project.description, 60)}
+                            </p>
+                            <div className="mt-6 flex justify-between">
+                                <a
+                                    href={project?.liveLink}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-white font-semibold bg-blue-400 btn"
+                                >
+                                    Live Demo <BsBoxArrowUpRight />
+                                </a>
                                 <button
                                     onClick={() => handleViewMore(project.id)}
-                                    className="btn text-white font-semibold bg-orange-400 w-full"
+                                    className="btn text-white font-semibold bg-blue-400"
                                 >
-                                    View Details
+                                    View Details <FaLongArrowAltRight />
                                 </button>
                             </div>
                         </div>

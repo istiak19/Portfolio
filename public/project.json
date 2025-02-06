@@ -1,33 +1,79 @@
 [
     {
         "id": 1,
-        "name": "Winter Clothes Donation",
-        "image": "https://i.ibb.co.com/sjfvddD/ass-9.png",
-        "technologies": "React, Tailwind CSS, Firebase, DaisyUI",
-        "description": "A platform for organizing winter donation drives to help people in need.",
-        "challenges": "Ensuring real-time data updates and user-friendly donation forms.",
-        "clientLink": "https://github.com/istiak19/assignment-9",
-        "liveLink": "https://winter-clothes-donation.netlify.app/"
+        "name": "BloodBanker",
+        "image": "https://i.ibb.co.com/STjvc1W/Screenshot-2025-02-06-120800.png",
+        "technologies": "React, Node.js, MongoDB, Express.js, Tailwind CSS, Firebase",
+        "description": "BloodBanker is an online platform designed to connect blood donors and recipients, enabling seamless and efficient blood donation management. It allows users to register as donors, browse available donation campaigns, and get in touch with nearby blood banks or individuals in need. The platform also offers features like user profiles, donation tracking, and volunteer opportunities. Its goal is to make blood donation more accessible, organized, and impactful for communities.",
+        "challenges": "Ensuring secure data storage and seamless integration with blood banks and donation campaigns.",
+        "clientLink": "https://github.com/istiak19/BloodBanker-client",
+        "serverLink": "https://github.com/istiak19/BloodBanker-server",
+        "liveLink": "https://bloodbanker-567f0.web.app/",
+        "features": [
+            "User Roles – Manage roles for donors, volunteers, and admins with secure access.",
+            "Donation Management – Schedule and track blood donations seamlessly.",
+            "Localized Search – Search donors and recipients by district and upazila.",
+            "Secure Authentication – Protect user data with JWT-based authentication.",
+            "Admin Dashboard – View real-time stats on users and donations.",
+            "Blog Section – Share updates, health tips, and donation stories.",
+            "Donation Tracking – Monitor and update the status of donations.",
+            "Payment Integration – Support campaigns with Stripe-powered payments.",
+            "Responsive Design – Enjoy a seamless experience across devices.",
+            "Community Impact – Host events and build awareness to save lives."
+        ]
     },
     {
         "id": 2,
-        "name": "Fundsphere",
-        "image": "https://i.ibb.co.com/n7k0CwJ/ass-10.png",
-        "technologies": "React, Node.js, MongoDB, Express.js, Tailwind CSS, Firebase, DaisyUI",
-        "description": "Fundsphere is an innovative crowdfunding platform that empowers individuals and organizations to bring their ideas to life. Whether it's personal needs, creative projects, or groundbreaking startups, Fundsphere connects creators with supporters to make dreams a reality. With intuitive features, secure transactions, and community-driven support, Fundsphere ensures a seamless and engaging fundraising experience.",
-        "challenges": "Implementing secure payment gateways.",
-        "serverLink": "https://github.com/istiak19/assignment-10-server",
-        "clientLink": "https://github.com/istiak19/assignment-10-client",
-        "liveLink": "https://fundsphere-website.web.app/"
-    },
-    {
-        "id": 3,
         "name": "EduCircle",
         "image": "https://i.ibb.co.com/FD0tLyX/ass-11.png",
         "technologies": "React, Node.js, MongoDB, Express.js, Tailwind CSS, Firebase, DaisyUI",
-        "description": "This project aims to create an interactive platform for managing assignments in an online group study environment. It allows users to create, submit, and grade assignments while promoting collaboration and accountability. Key features include login options, assignment management (create, modify, delete), peer grading, and a dark/light theme for better user experience. The platform ensures ease of use, flexibility, and engagement, offering a seamless way to manage and track assignments while encouraging collaborative learning.",
+        "description": "EduCircle is an interactive platform designed for managing assignments in an online group study environment. It enables users to create, submit, and grade assignments while promoting collaboration and accountability. With user authentication, peer grading, and a customizable theme, EduCircle provides an engaging and flexible experience for students and educators.",
         "serverLink": "https://github.com/istiak19/EduCircle-server",
         "clientLink": "https://github.com/istiak19/EduCircle-client",
-        "liveLink": "https://educircle-839d0.web.app/"
+        "liveLink": "https://educircle-839d0.web.app/",
+        "features": [
+            "User Authentication – Sign up and log in via form or Google authentication.",
+            " Assignment Management – Create, modify, and delete assignments easily.",
+            "Assignment Submission – Submit assignments with 'pending' or 'completed' status.",
+            "Peer Grading – Users can grade others' assignments but not their own.",
+            "Pending Status – Only 'pending' assignments are shown in the status list.",
+            "Dark/Light Theme – Switch between dark and light mode for a better experience."
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Fundsphere",
+        "image": "https://i.ibb.co.com/n7k0CwJ/ass-10.png",
+        "technologies": "React, Node.js, MongoDB, Express.js, Tailwind CSS, Firebase, DaisyUI",
+        "description": "FundSphere is a crowdfunding platform that enables users to raise funds for various causes. Users can create and manage campaigns, while others can donate to support them. The platform includes secure authentication, protected routes, and a dark/light theme toggle for an enhanced user experience.",
+        "challenges": "Implementing secure payment gateways.",
+        "serverLink": "https://github.com/istiak19/assignment-10-server",
+        "clientLink": "https://github.com/istiak19/assignment-10-client",
+        "liveLink": "https://fundsphere-website.web.app/",
+        "features": [
+            "User Authentication – Secure login and registration via email/password or Google authentication.",
+            "Campaign Management – Users can create, modify, and delete their own campaigns.",
+            "Donation System – Users can donate to active campaigns to help fund causes.",
+            " Dark/Light Mode – Toggle between dark and light themes for better accessibility.",
+            "Protected Routes – Campaign management and donation pages are restricted to logged-in users."
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Winter Clothes Donation",
+        "image": "https://i.ibb.co.com/sjfvddD/ass-9.png",
+        "technologies": "React, Tailwind CSS, Firebase, DaisyUI",
+        "description": "Winter Clothing Donation is a user-friendly platform designed to help people donate winter clothing to underprivileged communities across Bangladesh. By connecting donors with local volunteers, the platform ensures that warm clothing reaches those in need during the harsh winter months. Users can browse ongoing campaigns, view details after logging in, and easily contribute through a donation form. This initiative fosters a sense of community and compassion by bringing warmth and hope to vulnerable populations.",
+        "challenges": "Ensuring real-time data updates and user-friendly donation forms.",
+        "clientLink": "https://github.com/istiak19/assignment-9",
+        "liveLink": "https://winter-clothes-donation.netlify.app/",
+        "features": [
+            "User Authentication – Login & Register using email/password or Google authentication.",
+            "Donation Campaigns – Browse all active campaigns and donate via a simple form.",
+            "Profile Management – Users can update their profile details.",
+            "Real-time Toast Notifications – Success and error messages displayed using toast notifications.",
+            "Form Validation – Error messages for incorrect inputs (e.g., password mismatch).",
+            "Dynamic Page Titles – Page titles update dynamically based on the current section."
+        ]
     }
 ]

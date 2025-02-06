@@ -16,18 +16,30 @@ const View = () => {
     }, [id]);
 
     return (
-        <div className="card bg-base-100 shadow-xl my-20">
+        <div className="card *:text-white shadow-xl my-20">
             <figure>
                 <img
                     src={project?.image}
-                    alt="Shoes" />
+                    alt={project?.name} />
             </figure>
             <div className="card-body">
                 <h2 className="text-2xl font-bold">{project?.name}</h2>
                 <p><span className="text-xl font-medium">Description: </span>{project?.description}</p>
                 <p><span className="text-xl font-medium">Technologies: </span>{project?.technologies}</p>
-                <p><span className="text-xl font-medium">Challenges: </span>{project?.challenges||'N/A'}</p>
-                <div className="space-y-2 *:text-orange-400">
+                <p><span className="text-xl font-medium">Challenges: </span>{project?.challenges || 'N/A'}</p>
+
+                <div className="mt-4">
+                    <h3 className="text-xl font-semibold">Features:</h3>
+                    <ul className="list-disc pl-6">
+                        {
+                            project?.features?.map((feature, index) => (
+                                <li key={index}>{feature}</li>
+                            ))
+                        }
+                    </ul>
+                </div>
+
+                <div className="space-y-2 *:text-blue-500 mt-6">
                     <a
                         href={project?.clientLink}
                         target="_blank"

@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
-import { motion } from 'framer-motion'; // Import framer-motion
+import { motion } from 'framer-motion';
 
 const fadeIn = {
     hidden: { opacity: 0 },
