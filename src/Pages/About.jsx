@@ -13,7 +13,7 @@ const About = () => {
     }, []);
 
     return (
-        <div>
+        <div className='w-11/12 mx-auto'>
             <Helmet>
                 <title>About | ISTIAK AHAMED</title>
             </Helmet>
@@ -25,7 +25,7 @@ const About = () => {
             </div>
             <div className="lg:flex gap-7 items-center" data-aos="fade-up">
                 <div className="mb-8" data-aos="zoom-in" data-aos-delay="200">
-                    <div className="w-48 h-48 mx-auto rounded-full overflow-hidden">
+                    <div className="w-80 h-80 mx-auto rounded-full overflow-hidden">
                         <img
                             src={pic}
                             alt="Your Avatar"
@@ -38,19 +38,19 @@ const About = () => {
                     <p className="text-gray-400 mt-2 text-center">Junior Web Developer</p>
                 </div>
                 <div data-aos="fade-left" data-aos-delay="400">
-                    <p className="text-white">
+                    <p className="text-white text-justify">
                         Hi! I’m Istiak Ahamed, a junior web developer passionate about creating modern and responsive web applications. My journey into programming began during my Computer Science studies, when I became curious about how websites work. This curiosity quickly turned into a deep fascination with coding and problem-solving, leading me to explore various web technologies.Over time, I have gained expertise in JavaScript, React, Next.js, and the MERN stack, allowing me to build full-stack applications that are both functional and user-friendly..
                     </p>
-                    <p className="text-white mt-5">
+                    <p className="text-white mt-5 text-justify">
                         My journey into programming started during my Computer Science studies, when I became curious about how websites work. This curiosity soon turned into a deep fascination with coding.
                     </p>
-                    <p className="text-white mt-5">
+                    <p className="text-white mt-5 text-justify">
                         I enjoy working on projects that solve real-world problems and improve people's lives through technology. Whether it's developing web applications, interactive user interfaces, or full-stack solutions, I find joy in creating seamless, responsive, and user-friendly experiences.
                     </p>
-                    <p className="text-white mt-5">
+                    <p className="text-white mt-5 text-justify">
                         In my free time, I enjoy traveling and exploring new foods, which adds to my creativity and appreciation for diverse cultures.
                     </p>
-                    <p className="text-white mt-5 mb-10">
+                    <p className="text-white mt-5 mb-10 text-justify">
                         I’m on a mission to make an impact in the tech world by building innovative digital solutions. If you’re looking for a passionate developer who loves to learn, collaborate, and create, let’s connect!
                     </p>
                 </div>
