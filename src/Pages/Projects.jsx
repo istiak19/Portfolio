@@ -58,13 +58,13 @@ const Projects = () => {
                                     href={project?.liveLink}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="text-white font-semibold bg-blue-400 btn"
+                                    className="btn btn-outline btn-info mb-2 md:mb-0 w-full md:w-auto"
                                 >
                                     Live Demo <BsBoxArrowUpRight />
                                 </a>
                                 <button
                                     onClick={() => handleViewMore(project.id)}
-                                    className="btn text-white font-semibold bg-blue-400"
+                                   className="btn btn-outline btn-info mb-2 md:mb-0 w-full md:w-auto"
                                 >
                                     View Details <FaLongArrowAltRight />
                                 </button>

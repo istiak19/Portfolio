@@ -39,12 +39,19 @@ const About = () => {
                 </div>
                 <div data-aos="fade-left" data-aos-delay="400">
                     <p className="text-white">
-                        I have a passion for problem-solving and coding, and I’m always eager to learn new technologies.
-                        I'm a quick learner, hardworking, and committed to mastering web development. My expertise lies
-                        in web technologies, and I'm keen to contribute my skills to impactful projects.
+                        Hi! I’m Istiak Ahamed, a junior web developer passionate about creating modern and responsive web applications. My journey into programming began during my Computer Science studies, when I became curious about how websites work. This curiosity quickly turned into a deep fascination with coding and problem-solving, leading me to explore various web technologies.Over time, I have gained expertise in JavaScript, React, Next.js, and the MERN stack, allowing me to build full-stack applications that are both functional and user-friendly..
+                    </p>
+                    <p className="text-white mt-5">
+                        My journey into programming started during my Computer Science studies, when I became curious about how websites work. This curiosity soon turned into a deep fascination with coding.
+                    </p>
+                    <p className="text-white mt-5">
+                        I enjoy working on projects that solve real-world problems and improve people's lives through technology. Whether it's developing web applications, interactive user interfaces, or full-stack solutions, I find joy in creating seamless, responsive, and user-friendly experiences.
                     </p>
                     <p className="text-white mt-5">
                         In my free time, I enjoy traveling and exploring new foods, which adds to my creativity and appreciation for diverse cultures.
+                    </p>
+                    <p className="text-white mt-5 mb-10">
+                        I’m on a mission to make an impact in the tech world by building innovative digital solutions. If you’re looking for a passionate developer who loves to learn, collaborate, and create, let’s connect!
                     </p>
                 </div>
             </div>

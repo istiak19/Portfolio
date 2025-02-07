@@ -27,6 +27,7 @@ const View = () => {
                 <p><span className="text-xl font-medium">Description: </span>{project?.description}</p>
                 <p><span className="text-xl font-medium">Technologies: </span>{project?.technologies}</p>
                 <p><span className="text-xl font-medium">Challenges: </span>{project?.challenges || 'N/A'}</p>
+                <p><span className="text-xl font-medium">Improvements: </span>{project?.improvements || 'N/A'}</p>
 
                 <div className="mt-4">
                     <h3 className="text-xl font-semibold">Features:</h3>
@@ -41,28 +42,20 @@ const View = () => {
 
                 <div className="space-y-2 *:text-blue-500 mt-6">
                     <a
-                        href={project?.clientLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="block hover:underline"
-                    >
-                        Client Code
-                    </a>
-                    <a
-                        href={project?.serverLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="block hover:underline"
-                    >
-                        Server Code
-                    </a>
-                    <a
                         href={project?.liveLink}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="block hover:underline"
                     >
                         Live Project
+                    </a>
+                    <a
+                        href={project?.clientLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="block hover:underline"
+                    >
+                       GitHub Repository Client
                     </a>
                 </div>
             </div>
