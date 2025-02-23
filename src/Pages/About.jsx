@@ -35,14 +35,14 @@ const About = () => {
                     <h3 className="text-2xl font-semibold text-white mt-6 text-center">
                         Istiak Ahamed
                     </h3>
-                    <p className="text-gray-400 mt-2 text-center">Junior Web Developer</p>
+                    <p className="text-gray-400 mt-2 text-center">Frontend Developer</p>
                 </div>
                 <div data-aos="fade-left" data-aos-delay="400">
                     <p className="text-white text-justify">
-                        Hi! I’m Istiak Ahamed, a junior web developer passionate about creating modern and responsive web applications. My journey into programming began during my Computer Science studies, when I became curious about how websites work. This curiosity quickly turned into a deep fascination with coding and problem-solving, leading me to explore various web technologies.Over time, I have gained expertise in JavaScript, React, Next.js, and the MERN stack, allowing me to build full-stack applications that are both functional and user-friendly..
+                        Hi! I’m Istiak Ahamed, a Frontend Developer passionate about creating modern and responsive web applications. My journey into programming began during my Computer Science & Engineering studies, when I became curious about how websites work. This curiosity quickly turned into a deep fascination with coding and problem-solving, leading me to explore various web technologies.Over time, I have gained expertise in JavaScript, React, Next.js, and the MERN stack, allowing me to build full-stack applications that are both functional and user-friendly..
                     </p>
                     <p className="text-white mt-5 text-justify">
-                        My journey into programming started during my Computer Science studies, when I became curious about how websites work. This curiosity soon turned into a deep fascination with coding.
+                        My journey into programming started during my Computer Science & Engineering studies, when I became curious about how websites work. This curiosity soon turned into a deep fascination with coding.
                     </p>
                     <p className="text-white mt-5 text-justify">
                         I enjoy working on projects that solve real-world problems and improve people's lives through technology. Whether it's developing web applications, interactive user interfaces, or full-stack solutions, I find joy in creating seamless, responsive, and user-friendly experiences.

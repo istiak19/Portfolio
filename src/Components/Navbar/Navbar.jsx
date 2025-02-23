@@ -1,6 +1,6 @@
 import { Link, NavLink } from 'react-router-dom';
 import logoPic from '../../assets/logo.png';
-import { CiSaveDown1 } from 'react-icons/ci';
+import { IoCloudDownloadOutline } from "react-icons/io5";
 
 const Navbar = () => {
     const links = (
@@ -13,13 +13,13 @@ const Navbar = () => {
         </>
     );
 
-    const resumeLink = 'https://drive.google.com/uc?export=download&id=1lEQfIPHSfUKngD-9H81wTvOKe6iExv2P';
-    const resumeViewLink = 'https://drive.google.com/file/d/1lEQfIPHSfUKngD-9H81wTvOKe6iExv2P/view?usp=sharing';
+    const resumeViewLink = 'https://drive.google.com/file/d/18PsJC-Kitq9x_GP-0aBVT7qQTWHiYKn5/view?usp=sharing';
+    const resumeDownloadLink = 'https://drive.google.com/uc?export=download&id=18PsJC-Kitq9x_GP-0aBVT7qQTWHiYKn5';
 
     const handleResumeDownload = () => {
         window.open(resumeViewLink, '_blank');
         const link = document.createElement('a');
-        link.href = resumeLink;
+        link.href = resumeDownloadLink;
         link.setAttribute('download', 'Resume.pdf');
         document.body.appendChild(link);
         link.click();
@@ -37,16 +37,10 @@ const Navbar = () => {
                             fill="none"
                             viewBox="0 0 24 24"
                             stroke="currentColor">
-                            <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth="2"
-                                d="M4 6h16M4 12h8m-8 6h16" />
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" />
                         </svg>
                     </div>
-                    <ul
-                        tabIndex={0}
-                        className="menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-52 p-2 bg-[#292637] shadow">
+                    <ul tabIndex={0} className="menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-52 p-2 bg-[#292637] shadow">
                         {links}
                     </ul>
                 </div>
@@ -60,11 +54,8 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <button
-                    onClick={handleResumeDownload}
-                    className="btn btn-outline btn-accent mb-2 md:mb-0 w-full md:w-auto"
-                >
-                    <CiSaveDown1 /> Resume
+                <button onClick={handleResumeDownload} className="btn btn-outline btn-accent mb-2 md:mb-0 w-full md:w-auto">
+                    <IoCloudDownloadOutline /> Resume
                 </button>
             </div>
         </div>
